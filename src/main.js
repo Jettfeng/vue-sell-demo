@@ -1,0 +1,13 @@
+import Vue from 'vue'
+import Layout from './components/layout'
+import VueResource from 'vue-resource'
+import router from './router/index'
+Vue.use(VueResource)
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  template: '<Layout/>',
+  components: { Layout }
+})
